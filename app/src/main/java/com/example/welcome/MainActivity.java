@@ -1,14 +1,23 @@
-package com.example.welcome;
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.example.welcome">
 
-import androidx.appcompat.app.AppCompatActivity;
+<application
+        android:allowBackup="true"
+                android:icon="@mipmap/ic_launcher"
+                android:label="@string/app_name"
+                android:roundIcon="@mipmap/ic_launcher_round"
+                android:supportsRtl="true"
+                android:theme="@style/Theme.Welcome">
+<activity
+            android:name=".MainActivity"
+                    android:exported="true">
+<intent-filter>
+<action android:name="android.intent.action.MAIN" />
 
-import android.os.Bundle;
+<category android:name="android.intent.category.LAUNCHER" />
+</intent-filter>
+</activity>
+</application>
 
-public class MainActivity extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-}
+</manifest>
